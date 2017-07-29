@@ -1,0 +1,229 @@
+html {
+  font-size: 14px;
+  font-family: 'Droid Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+h1 {
+  font-family: 'Paprika', cursive;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: rgb(255, 233, 251);
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+header h1, h2 {
+  text-align: right;
+}
+
+header {
+  height: 400px;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(45, 135, 200, 0.4)), url("../img/gallery/15.jpg") center 20% no-repeat;
+  background-size: cover;
+}
+
+header h2 {
+  color: rgb(255, 255, 255);
+	font-style: italic;
+
+}
+
+header div{
+	margin-right: 10px;
+}
+
+.header-animation img {
+  width: 30px;
+}
+
+article div:first-child {
+  width: 30%;
+}
+
+article div:last-child {}
+
+article {
+  clear: both;
+  font-size: 1.2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+article p{
+  text-align: justify;
+}
+
+.article-img-left, .article-img-right {
+  width: 25%;
+  height: auto;
+}
+
+.article-img-left {
+  float: left;
+  padding-right: 20px;
+}
+
+.article-img-right {
+  float: right;
+  padding-left: 20px;
+}
+
+article:nth-child(2n) {
+  background-color: rgb(183, 221, 222);
+}
+
+footer {
+  clear: both;
+}
+
+form {
+  background-color: rgb(183, 221, 222);
+  padding: 50px 0;
+}
+
+form div {
+  width: 40%;
+  margin: 0 auto;
+  padding: 30px 0 35px;
+  background-color: white;
+  border-radius: 4px;
+  position: relative;
+
+}
+
+.form{
+    min-width: 400px;
+}
+
+div button {
+  width: 30%;
+  background-color: rgb(255, 222, 246);
+  height: 40px;
+  border: none;
+}
+
+div input {
+  width: 60%;
+  height: 40px;
+  border: 1px solid rgb(198, 198, 198);
+}
+
+div input, div button {
+  border-radius: 4px;
+  margin: 30px auto 0;
+  display: block;
+}
+
+.form_p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.form-animation {
+  width: 30px;
+  background-color: transparent;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation-name: cupcake;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+.form-animation img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes cupcake {
+  0% {
+    right: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    right: 93%;
+    transform: rotate(720deg);
+  }
+  100% {
+    right: 0;
+    transform: rotate(0deg);
+  }
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: stretch;
+  padding: 30px 0;
+}
+
+.gallery div {
+  flex: 1 1 20%;
+}
+
+.gallery div img {
+  border-radius: 40px;
+}
+
+.gallery div:hover {
+  transform: scale(2);
+  z-index: 10;
+}
+
+.animation{
+width: 100px;
+margin: 0 auto;
+}
+
+.animation img{
+	width: 30px;
+}
+
+footer{
+  width: 100%;
+  height: 18px;
+  background-color: rgb(88, 166, 195);
+  position: relative;
+}
+
+footer p{
+position: absolute;
+  display: inline-block;
+  right: 20%;
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+  .gallery div {
+    flex: 1 1 50%;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+
+  .article-img-left, .article-img-right {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px){
+  .gallery div {
+    flex: 1 1 25%;
+  }
+  .article-img-left, .article-img-right {
+    width: 50%;
+  }
+}
+
+span{
+  font-family: 'Lobster', cursive;
+  font-size: 1.8rem;
+}

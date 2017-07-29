@@ -1,0 +1,290 @@
+body{
+  width: 100%;
+  font-family: 'Helvetica', sans-serif;
+  min-width: 400px;
+  font-size: 14px;
+}
+
+.our-work{
+  width: 100%;
+  background-color: #de2b24;
+}
+
+.projects{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px auto 0;
+  min-width: 300px;
+}
+
+.projects div{
+  height: 252px;
+  width: 25%;
+}
+
+.project-name{
+    background: url("../img/telegram.png") center center no-repeat, linear-gradient(#f35e59, #f35e59);
+    position: relative;
+}
+
+.projects div img{
+
+    width: 100%;
+    height: inherit;
+}
+
+ .facebook-analysis_form, .get-in-touch_form, .facebook-analysis_form input, .facebook-analysis_form button,
+ .social-networks, .get-in-touch_form button, .get-in-touch div, .facebook-analysis div{
+  margin: 0 auto;
+
+}
+
+
+.get-in-touch div, .facebook-analysis div{
+  width: 60%;
+  padding: 50px 0;
+}
+
+.facebook-analysis_form, .get-in-touch_form, .social-networks{
+    width: 100%;
+}
+
+.facebook-analysis_form{
+  background-color: white;
+  padding-bottom: 50px;
+}
+
+.facebook-analysis_form input{
+  width: 80%;
+  height: 50px;
+
+}
+
+input, button, .social-networks a, .facebook-analysis_form{
+  display: block;
+  border-radius: 4px;
+}
+
+
+.inner{
+  padding: 50px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.facebook-analysis_form button{
+  border: none;
+  background-color: #de2b24;
+  width: 161px;
+  height: 45px;
+}
+
+h2,h3, p{
+  text-align: center;
+  color: white;
+}
+
+div h3{
+  font-size: 1.2rem;
+  position: absolute;
+  top: 60%;
+}
+
+h3 span{
+  font-size: 2.2rem;
+}
+
+section h2{
+  font-size: 3.426rem;
+}
+
+.facebook-analysis_form p{
+  color: #828282;
+  padding-bottom: 40px;
+}
+
+.facebook-analysis_form input{
+  margin-bottom: 10px;
+  border: 1px solid #d8d8d8;
+}
+
+.facebook-analysis_form button{
+  margin-top: 37px;
+  color: white;
+}
+
+
+.facebook-analysis{
+  background-color: #1287bf;
+}
+
+.get-in-touch{
+  background-color: #2a2a2a;
+}
+
+.get-in-touch input{
+  width: 100%;
+  height: 54px;
+  background-color: #515151;
+  border: none;
+}
+
+.get-in-touch button{
+  width: 152px;
+  height: 50px;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid #515151;
+  color: white;
+}
+
+footer{
+  width: 100%;
+  background-color: #515151;
+  color: white;
+}
+
+.footer{
+  text-align: center;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+div.x{
+  position: relative;
+  padding: 20px;
+  color: white;
+  background-color: #de2b24;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  right: -95%;
+  top: -25px;
+  background-color: red;
+  background: url("../img/x.png") center center no-repeat, linear-gradient(#de2b24, #de2b24);
+}
+
+div.arrow{
+  border: 2px solid white;
+  border-radius: 50%;
+    width: 60px;
+    height: 60px;
+      padding: 20px;
+      background: url("../img/b.png") center center no-repeat;
+      transform: rotate(180deg);
+      margin: 10px auto;
+}
+
+.social-networks a{
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #515151;
+  display: inline-block;
+  margin-right:  22px;
+}
+
+.social-networks a:hover{
+  border-color: #de2b24;
+}
+
+.social-networks a:last-child{
+  margin-right: 0;
+}
+
+.social-networks{
+  width: 285px;
+}
+
+.facebook{
+  background: url("../img/facebook.png") center center no-repeat;
+}
+
+.twitter{
+    background: url("../img/twitter.png") center center no-repeat;
+}
+
+.google{
+    background: url("../img/google.png") center center no-repeat;
+}
+
+.linkedin{
+    background: url("../img/linkedin.png") center center no-repeat;
+}
+
+div.triangle-up{
+  width: 0;
+height: 0;
+border-left: 35px solid transparent;
+border-right: 35px solid transparent;
+border-bottom: 35px solid white;
+padding: 0;
+}
+
+
+.get-in-touch div > h2, .get-in-touch div > p, .get-in-touch div > form, .get-in-touch div > nav,
+.get-in-touch_form button{
+  margin-top: 20px;
+}
+
+@media (min-width: 800px) and (max-width:1100px) {
+  div h3{
+    font-size: 1rem;
+    left: 30%
+  }
+
+  h3 span{
+    font-size: 2rem;
+    display: block;
+  }
+
+  .projects div{
+    height: 252px;
+    width: 50%;
+  }
+  .projects div img{
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px){
+
+  div h3{
+    font-size: 2rem;
+    left: 20%
+  }
+  h3 span{
+    font-size: 3rem;
+    display: block;
+  }
+
+  .projects div{
+    height: 252px;
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 300px) and (max-width: 599px){
+
+  div h3{
+    font-size: 1.5rem;
+    left: 30%
+  }
+  h3 span{
+    font-size: 2.2rem;
+    display: block;
+  }
+
+  .projects div{
+    height: 252px;
+    width: 100%;
+  }
+
+
+  .get-in-touch h2, .facebook-analysis h2{
+    font-size: 2rem;
+  }
+}
